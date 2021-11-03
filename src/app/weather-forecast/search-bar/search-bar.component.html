@@ -1,1 +1,10 @@
-<p>search-bar works!</p>
+<div class="container">
+  <form [formGroup]="searchBarForm" class="search-bar__form" (submit)="emitSearchValue()">
+    <input
+      formControlName="search"
+      class="search-bar__input"
+      placeholder="Digite o nome da sua cidade"
+    />
+    <button class="search-bar__button" type="submit">Buscar</button>
+  </form>
+</div>
