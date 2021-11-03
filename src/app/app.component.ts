@@ -5,7 +5,7 @@ import { environment } from "src/environments/environment"
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   title = 'Atividade-Jazztech';
@@ -16,11 +16,11 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.weatherForecastService.getKeyValidation(environment.apiKey).subscribe(res => {
-      console.log('RES: ', res);
-    })
-    this.weatherForecastService.getWeatherByCityName(environment.apiKey, 'Campinas,SP').subscribe(res => {
-      console.log('res: ', res);
-    })
+    // this.weatherForecastService.getKeyValidation(environment.apiKey).subscribe(res => {
+    //   console.log('RES: ', res);
+    // })
+    // this.weatherForecastService.getWeatherByCityName(environment.apiKey, 'Campinas,SP').subscribe(res => {
+    //   console.log('res: ', res);
+    // })
   }
 }
