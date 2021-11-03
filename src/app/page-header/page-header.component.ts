@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-header',
   templateUrl: './page-header.component.html',
-  styleUrls: ['./page-header.component.css']
+  styleUrls: ['./page-header.component.scss']
 })
 export class PageHeaderComponent implements OnInit {
+  selectedNav = 'inicio'
 
   constructor() { }
 

@@ -1,6 +1,18 @@
 <div class="header-wrapper">
     <h5>Previsão do tempo</h5>
-    <button>Buscar</button>
-    <button>Códigos WOEI</button>
-    <button>Sobre</button>
+    <ul class="header-buttons__holder">
+        <li>
+            <a
+                class="nav-button"
+                [class.nav-button__selected]="selectedNav === 'inicio'"
+                >Início
+            </a>
+        </li>
+        <li>
+            <a class="nav-button">Códigos WOEI</a>
+        </li>
+        <li>
+            <a class="nav-button">Sobre</a>
+        </li>
+    </ul>
 </div>
