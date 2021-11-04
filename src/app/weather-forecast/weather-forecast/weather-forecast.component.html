@@ -2,3 +2,8 @@
 <app-search-bar
     (searchValueEmitter)="searchCityWeather($event)"
 ></app-search-bar>
+<app-weather-box
+    *ngIf="showWeather"
+    [cityWeather]="cityWeather"
+    style="margin-top: 80px"
+></app-weather-box>

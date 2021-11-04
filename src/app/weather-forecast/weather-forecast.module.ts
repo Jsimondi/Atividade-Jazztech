@@ -6,6 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
 import { WeatherBoxComponent } from './weather-box/weather-box.component';
 import { WeatherLineComponent } from './weather-line/weather-line.component';
+import { HighlightedDayComponent } from './highlighted-day/highlighted-day.component';
+import { WeekDaysPipe } from './pipes/week-days.pipe';
+import { MonthPipe } from './pipes/month.pipe';
 
 
 
@@ -14,7 +17,10 @@ import { WeatherLineComponent } from './weather-line/weather-line.component';
     SearchBarComponent,
     WeatherForecastComponent,
     WeatherBoxComponent,
-    WeatherLineComponent
+    WeatherLineComponent,
+    HighlightedDayComponent,
+    WeekDaysPipe,
+    MonthPipe
   ],
   imports: [
     CommonModule,

@@ -7,18 +7,21 @@ import { WeatherForecastService } from '../weather-forecast.service';
   styleUrls: ['./weather-forecast.component.scss']
 })
 export class WeatherForecastComponent implements OnInit {
-  cityWeather = {}
+  cityWeather = {};
+  showWeather: boolean = false;
 
   constructor(
     private weatherForecastService: WeatherForecastService
   ) { }
 
   ngOnInit(): void {
+    console.log('cityWeather: ', this.cityWeather);
   }
 
   searchCityWeather(searchedCityName: string) {
     this.weatherForecastService.getWeatherByCityName(searchedCityName).subscribe(res => {
       console.log('res: ', res);
+      this.showWeather = res.valid_key;
       this.cityWeather = res.results;
     })
   }
