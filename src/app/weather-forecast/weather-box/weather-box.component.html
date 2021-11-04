@@ -1,1 +1,11 @@
-<p>weather-box works!</p>
+<div class="box__wrapper">
+    <app-highlighted-day
+        [forecast]="cityWeather"
+        class="highlighted-day"
+    ></app-highlighted-day>
+    <div *ngFor="let dayForecast of cityWeather.forecast">
+        <app-weather-line
+            [forecast]="dayForecast"
+        ></app-weather-line>
+    </div>
+</div>

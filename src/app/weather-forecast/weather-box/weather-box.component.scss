@@ -1,0 +1,7 @@
+.box__wrapper {
+    width: 100%;
+    display: grid;
+    border: 1px solid blue;
+    border-radius: 20px;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}

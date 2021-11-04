@@ -1,0 +1,16 @@
+<div class="day__wrapper">
+    <div class="date">
+        <div>
+            {{ day.getDay() | weekDays }}
+        </div>
+        <div>
+            {{ day.getDate() }}
+            {{ day.getMonth() | month }}
+        </div>
+    </div>
+    <div class="weather__content">
+        <div class="temperature">
+            {{ forecast.temp }} <sup>o</sup><span>C</span>
+        </div>
+    </div>
+</div>
