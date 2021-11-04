@@ -22,7 +22,7 @@ export class SearchBarComponent implements OnInit {
   }
 
   emitSearchValue() {
-    this.searchValueEmitter.emit(this.searchBarForm.value);
+    this.searchValueEmitter.emit(this.searchBarForm.value.search);
   }
 
 }
