@@ -5,14 +5,25 @@
             <a
                 class="nav-button"
                 [class.nav-button__selected]="selectedNav === 'inicio'"
+                (click)="navigate('')"
                 >Início
             </a>
         </li>
         <li>
-            <a class="nav-button">Códigos WOEI</a>
+            <a
+                class="nav-button"
+                [class.nav-button__selected]="selectedNav === 'woei'"
+                (click)="navigate('woei')"
+                >Códigos WOEI
+            </a>
         </li>
         <li>
-            <a class="nav-button">Sobre</a>
+            <a
+                class="nav-button"
+                [class.nav-button__selected]="selectedNav === 'sobre'"
+                (click)="navigate('about')"
+                >Sobre
+            </a>
         </li>
     </ul>
 </div>
