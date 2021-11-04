@@ -11,11 +11,12 @@ export class PageHeaderComponent implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
-    console.log('Activated Route: ', this.activatedRoute);
+    const urlParam = window.location.href.split('/')[3]
+    this.switchSelectedNav(urlParam);
   }
 
   switchSelectedNav(route: string) {
@@ -28,6 +29,12 @@ export class PageHeaderComponent implements OnInit {
         break;
       case 'sobre':
         this.selectedNav = 'sobre';
+        break;
+      case 'about':
+        this.selectedNav = 'sobre';
+        break;
+      default:
+        this.selectedNav = 'inicio';
         break;
     } 
   }
