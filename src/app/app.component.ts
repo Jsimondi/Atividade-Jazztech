@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { WeatherForecastService } from './weather-forecast/weather-forecast.service';
-import { environment } from "src/environments/environment"
 
 @Component({
   selector: 'app-root',
@@ -9,7 +8,6 @@ import { environment } from "src/environments/environment"
 })
 export class AppComponent implements OnInit {
   title = 'Atividade-Jazztech';
-  environment = environment;
 
   constructor(
     private weatherForecastService: WeatherForecastService,
