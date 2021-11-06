@@ -9,8 +9,17 @@
         </div>
     </div>
     <div class="weather__content">
-        <div class="temperature">
+        <div class="weather__content--temperature">
             {{ forecast.temp }} <sup>o</sup><span>C</span>
+        </div>
+        <div class="weather__content--description">
+            <span>{{ forecast.description }}</span>
+            <div class="weather__content--icons">
+                <span class="material-icons" style="margin-right: 4px;">water_drop</span>
+                <span>{{ forecast.humidity }}%</span>
+                <span class="material-icons" style="margin-right: 4px">air</span>
+                <span>{{ forecast.wind_speedy }}</span>
+            </div>
         </div>
     </div>
 </div>

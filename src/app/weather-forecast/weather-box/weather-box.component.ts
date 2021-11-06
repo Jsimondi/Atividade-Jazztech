@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { SingleDate } from '../weather.models';
 
 @Component({
   selector: 'app-weather-box',
@@ -13,4 +14,8 @@ export class WeatherBoxComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  filterSevenDays(weatherArray: SingleDate[]){
+    return weatherArray.slice(0, 6);
+  }
+  
 }

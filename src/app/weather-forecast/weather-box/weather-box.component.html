@@ -3,7 +3,7 @@
         [forecast]="cityWeather"
         class="highlighted-day"
     ></app-highlighted-day>
-    <div *ngFor="let dayForecast of cityWeather.forecast">
+    <div *ngFor="let dayForecast of filterSevenDays(cityWeather.forecast)">
         <app-weather-line
             [forecast]="dayForecast"
         ></app-weather-line>
